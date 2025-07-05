@@ -1,0 +1,159 @@
+/* Universal style */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* project color palete
+
+background rgb(81.771% 81.753% 74.755%);
+option 1 rgb(19.001% 34.279% 70.074%); letters
+option 2 rgb(10.175% 23.692% 46.534%); 
+option 3 rgb(10.564% 45.122% 69.458%); links:hover
+option 4 #ea580c buttons
+*/
+
+
+*{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(19.001% 34.279% 70.074%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(81.771% 81.753% 74.755%);
+}
+
+
+hr{
+    height: 0.5rem;
+    width: 100%;
+    border: none;
+    background-color: rgb(10.175% 23.692% 46.534%);
+}
+
+
+/* Header style */
+
+#headerdesktop{
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rem rgb(10.175% 23.692% 46.534%);
+}
+
+#navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul#navlist li a{
+    text-decoration: none;
+    float: left;
+    padding: 0.5rem;
+    color: rgb(19.001% 34.279% 70.074%);
+}
+
+ul#navlist li a:hover{
+    color: rgb(224, 214, 214);
+    background-color: rgb(10.564% 45.122% 69.458%);
+    border-radius: 2.5rem;
+}
+
+.page-link.active a{
+    border-bottom: 3px white;
+}
+
+.menu-icon{
+    margin: 0 0.5rem;
+    font-size: 2rem;
+}
+
+
+
+/*Form style*/
+
+#contact-form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 100);
+    border: none;
+
+}
+
+form{
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.8rem;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+
+button{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #ea580c;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+.form-group{
+    margin: 0.3rem;
+    padding: 0.5rem;
+}
+
+.form-text{
+    margin: 1.5rem 2rem;
+    padding-top: 1.2rem;
+}
+
+.form-text p{
+    text-align: justify;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 0.2rem;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: rgb(10.564% 45.122% 69.458%);
+    font-size: 0.7rem;
+    color:whitesmoke;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+}
+
+#foot-text{
+    color: whitesmoke;
+    font-weight: 400;
+}
